@@ -63,9 +63,9 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
-  left: 10%;
-  transform: translate(-50%, -50%);
+  top: 30%; 
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -148,12 +148,13 @@ button {
 }
 
 .card {
-  width: 100%;
+  width: 25%;
   height: 100%;
   padding: 50px;
-  display: flex;
+  display: block;
+  margin-bottom: 10px;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -164,7 +165,8 @@ button {
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin: 30px;
 }
 
 #modal-background {
@@ -181,6 +183,7 @@ button {
   top: 0;
 }
 
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
@@ -188,5 +191,24 @@ button {
   }
   .card {
     flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-start;
+      padding: 20px 30px;
+      color: white;
+      border-radius: 15px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        92.49deg,
+        rgba(255, 255, 255, 0.1) 0.18%,
+        rgba(255, 255, 255, 0.05) 99.85%
+      );
+      backdrop-filter: blur(5px);
+      margin-bottom: 30px;
+     
+  
   }
 }
